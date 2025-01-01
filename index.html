@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+    <!-- Icon Image -->
+    <link rel="icon" href="Images/quiz.png">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Electrolize&display=swap"
+        rel="stylesheet" />
+    <!-- FontAwesome File-->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- BootStrap File -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+    <section class="vh-100 d-flex align-items-center" id="quizPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-7 m-auto">
+                    <div class="rounded-1 main-box animate__animated animate__lightSpeedInLeft">
+                        <div
+                            class="col-9 col-md-5 text-center m-auto mb-4 text-dark heading animate__animated animate__zoomInDown">
+                            <h1 class="py-2 bg-white mb-0">Quiz App</h1>
+                        </div>
+                        <div class="my-3 m-lg-3 form-floating">
+                            <select class="form-select" id="categoryMenu" aria-label="category select">
+                                <option value="" selected>Any Category</option>
+                                <option value="9">General Knowledge</option>
+                                <option value="12">Music</option>
+                                <option value="21">Sports</option>
+                                <option value="11">Film</option>
+                                <option value="18">Science: Computers</option>
+                            </select>
+                            <label for="categoryMenu">Chose Category</label>
+                        </div>
+                        <div class="my-3 m-lg-3 form-floating">
+                            <select class="form-select" id="difficultyMenu" aria-label="difficulty select">
+                                <option value="easy" selected>Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            <label for="difficultyMenu">Choose Difficulty Level</label>
+                        </div>
+                        <div class="my-3 m-lg-3 form-floating">
+                            <input type="number" class="form-control" id="numberOfQuestions"
+                                placeholder="Number Of Questio">
+                            <label for="numberOfQuestions">Number Of Questions</label>
+                        </div>
+                        <div class="mx-lg-3">
+                            <button class="btn w-100 text-white btn-color px-4 py-2 rounded-5"
+                                id="startBtn">Start</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-none vh-100 d-flex align-items-center" id="questionPage">
+        <div class="container">
+            <div id="allQuestions" class="row">
+            </div>
+        </div>
+    </section>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="Js/index.js"></script>
+</body>
+
+</html>
